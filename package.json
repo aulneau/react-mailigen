@@ -41,6 +41,11 @@
     "types"
   ],
   "homepage": "https://github.com/aulneau/react-mailigen",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [
     "mailigen",
     "react",
@@ -52,11 +57,6 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "main": "dist/react-mailigen.cjs.js",
   "module": "dist/react-mailigen.esm.js",
