@@ -1,0 +1,4 @@
+dist
+.size-snapshot.json
+.idea
+node_modules
