@@ -33,3 +33,6 @@ The component takes the following props:
 - `id`: (optional) the List ID you want the emails to be added to (defaults to: `process.env.MAILIGEN_LIST`)
 - `apiKey`: (optional) the apiKey for your account (defaults to: `process.env.MAILIGEN_API_KEY`)
 - `options`: any other options you'd like to pass to your list
+
+#### See also
+- [`mailigen-js`](https://github.com/hstove/mailigen-js) - This simple library gives you the ability to add email to your newsletter lists on Mailigen.
