@@ -18,7 +18,7 @@ class Mailigen extends React.Component {
 
   doSubscribe = async e => {
     e.preventDefault();
-    const { email, id, apiKey: apikey, from: FROM } = this.props;
+    const { email, id, apiKey: apikey, from: FROM, options } = this.props;
     this.setState({
       loading: true
     });
