@@ -6,8 +6,9 @@ class Mailigen extends React.Component {
   static propTypes = {
     from: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    apiKey: PropTypes.string.isRequired
+    id: PropTypes.string,
+    apiKey: PropTypes.string,
+    options: PropTypes.object
   };
   state = {
     loading: false,
@@ -22,13 +23,17 @@ class Mailigen extends React.Component {
       loading: true
     });
 
+    const idProp = id ? { id } : {};
+    const apiKeyProp = apikey ? { apikey } : {};
+
     try {
       const res = await subscribe(
         email,
         { FROM },
         {
-          id,
-          apikey
+          ...idProp,
+          ...apiKeyProp,
+          ...options
         }
       );
 
