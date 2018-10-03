@@ -53,6 +53,11 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "main": "dist/react-mailigen.cjs.js",
   "module": "dist/react-mailigen.esm.js",
   "peerDependencies": {
