@@ -3,6 +3,7 @@
   "description": "A react component for subscribing emails to a mailigen list",
   "version": "1.0.0",
   "author": "Thomas Osmonson",
+  "bugs": "https://github.com/aulneau/react-mailigen/issues",
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "mailigen": "^1.0.2",
@@ -34,6 +35,12 @@
     "src",
     "types"
   ],
+  "homepage": "https://github.com/aulneau/react-mailigen",
+  "keywords": [
+    "mailigen",
+    "react",
+    "render-props"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.{js,md,ts,tsx}": [
@@ -47,10 +54,13 @@
     "prop-types": "^15.6.2",
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   },
+  "repository": "https://github.com/aulneau/react-mailigen",
   "scripts": {
     "build": "npm run clean && npm run build:code",
     "build:code": "rollup -c",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "types": "types/index.d.ts"
 }
