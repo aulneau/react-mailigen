@@ -15,6 +15,10 @@
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.6.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
     "fast-async": "^6.3.8",
     "husky": "^1.1.0",
     "lint-staged": "^7.3.0",
@@ -60,8 +64,10 @@
     "build": "npm run clean && npm run build:code",
     "build:code": "rollup -c",
     "clean": "rimraf dist",
+    "lint": "eslint src",
     "precommit": "lint-staged",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "eslint src"
   },
   "types": "types/index.d.ts"
 }
