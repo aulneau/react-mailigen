@@ -1,7 +1,7 @@
 {
   "name": "react-mailigen",
   "description": "A react component for subscribing emails to a mailigen list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Thomas Osmonson",
   "bugs": "https://github.com/aulneau/react-mailigen/issues",
   "dependencies": {
